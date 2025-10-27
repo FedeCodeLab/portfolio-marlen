@@ -1,8 +1,8 @@
-export default function PrensaPage() {
+export default function DigitalPage() {
   return (
     <div className="flex flex-col gap-[4vw]">
       <div className="min-h-screen w-[450px]">
-        <h1 className="rubik-glitch">Prensa</h1>
+        <h1 className="rubik-glitch">POESÍA DIGITAL</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sit
           cum soluta doloribus, illo ducimus inventore ipsam voluptatum nesciunt
