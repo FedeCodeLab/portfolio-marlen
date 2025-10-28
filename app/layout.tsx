@@ -3,6 +3,7 @@ import { Rubik_Glitch } from "next/font/google";
 import { Geist } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
+import { ToggleTheme } from "@/_components/ToggleTheme";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es" className="dark">
       <body
         className={`${geistSans.variable} ${rubikGlitch.variable} antialiased relative text-[1.2rem]`}
       >
@@ -42,6 +43,7 @@ export default function RootLayout({
         <div className="relative z-20">
           <NavbarContainer />
           {children}
+          <ToggleTheme />
         </div>
       </body>
     </html>
