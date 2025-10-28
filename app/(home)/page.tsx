@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <div className="h-screen flex items-center">
       <div className="flex flex-col pl-[4vw]">
-        <h1 className="text-[58px] leading-[70px]">
+        <h1 className="rubik-glitch">
           MARLENE
           <br />
           AYALA

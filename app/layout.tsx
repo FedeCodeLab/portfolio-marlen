@@ -1,11 +1,18 @@
-import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import { NavbarContainer } from "@/_components/navbar";
+import { Rubik_Glitch } from "next/font/google";
+import { Geist } from "next/font/google";
+import type { Metadata } from "next";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const rubikGlitch = Rubik_Glitch({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-rubik-glitch",
 });
 
 export const metadata: Metadata = {
@@ -21,10 +28,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} antialiased relative text-[1.2rem]`}
+        className={`${geistSans.variable} ${rubikGlitch.variable} antialiased relative text-[1.2rem]`}
       >
-        <NavbarContainer />
-        {children}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="fixed top-0 left-0 w-full h-full object-cover -z-10 pointer-events-none"
+        >
+          <source src="/background.mp4" type="video/mp4" />
+        </video>
+        <div className="relative z-20">
+          <NavbarContainer />
+          {children}
+        </div>
       </body>
     </html>
   );

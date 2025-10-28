@@ -1,8 +1,8 @@
-export default function BlogPage() {
+export default function PoesiaPage() {
   return (
     <div className="flex flex-col gap-[4vw]">
       <div className="min-h-screen w-[450px]">
-        <h1 className="text-[3.5rem]">SOBRE MÍ</h1>
+        <h1 className="rubik-glitch">POESÍA</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sit
           cum soluta doloribus, illo ducimus inventore ipsam voluptatum nesciunt
