@@ -14,10 +14,6 @@ export default function DigitalPage() {
           impedit nesciunt dolor dignissimos deleniti dolores! Culpa facilis
           architecto vel sunt consectetur commodi quis reprehenderit itaque,
           earum labore delectus maxime ullam consequatur sit? Dolores accusamus
-          rem temporibus, a totam ipsa perspiciatis quas! Error rerum expedita
-          voluptatum vitae recusandae minima distinctio accusantium eum
-          exercitationem esse, doloribus quo neque inventore veritatis nesciunt
-          cumque nihil nisi?
         </p>
       </div>
       <div>
