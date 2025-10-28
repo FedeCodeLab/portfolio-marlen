@@ -1,11 +1,11 @@
-import { WindowsDark } from "../sobre-mi/window/WindowsDark";
+import { Bloc } from "@/_components/ui/Bloc";
 
 export default function PrensaPage() {
   return (
     <div className="flex flex-col gap-[4vw]">
       <div className="min-h-screen w-[450px] flex flex-col gap-[2vw]">
         <h1 className="rubik-glitch">Prensa</h1>
-        <WindowsDark>
+        <Bloc>
           <>
             <p>
               Marlene Ayala (Buenos Aires, 1991) es poeta, artista visual,
@@ -22,7 +22,7 @@ export default function PrensaPage() {
               reeditado por Matrerita en 2020 y por MalViaje, México.
             </p>
           </>
-        </WindowsDark>
+        </Bloc>
       </div>
       <div>
         <p>
